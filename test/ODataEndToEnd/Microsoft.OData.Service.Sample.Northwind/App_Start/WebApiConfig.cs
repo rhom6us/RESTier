@@ -41,7 +41,7 @@ namespace Microsoft.OData.Service.Sample.Northwind
             HttpConfiguration config, HttpServer server)
         {
             config.SetUseVerboseErrors(true);
-            config.MapRestierRoute<NorthwindApi2>(
+            config.MapRestierRoute<NorthwindApi>(
                 "NorthwindApi", "api/Northwind",
                 new RestierBatchHandler(server));
         }
